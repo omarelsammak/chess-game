@@ -1,0 +1,10 @@
+
+# screen dimensions 
+WIDTH= 500
+HEIGHT=500
+
+#BOARD DIMENSIONS 
+ROWS=8
+COLS=8
+SQSIZE=HEIGHT // ROWS 
+

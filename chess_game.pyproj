@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d952d16c-e233-43be-920a-57f52b2cebec</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>chess_game.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="chess_game.py" />
+    <Compile Include="board.py" />
+    <Compile Include="square.py" />
+    <Compile Include="game.py" />
+    <Compile Include="main.py" />
+    <Compile Include="const.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
