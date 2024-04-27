@@ -15,6 +15,7 @@ class main:
         screen=self.screen
         while True:
             game.show_bg(screen)
+            game.show_pieces(screen)
             #pygame.event.pump()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:

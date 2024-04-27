@@ -4,7 +4,8 @@ class Square:
         self.col=col
         self.piece=piece
 
-    pass
+    def has_piece(self):
+        return self.piece !=None
 
 
 

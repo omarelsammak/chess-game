@@ -1,4 +1,5 @@
 import math
+import os 
 class piece:
     def __init__(self,name,color,value,texture=None,texture_rect=None) -> None:
         self.name=name
@@ -7,9 +8,13 @@ class piece:
         self.value=value*value_sign
         self.texture=texture
         self.set_texture()
+        self.moves=[]
+        self.moved=False
         self.texture_rect=texture_rect
-    def set_texture(self):
-        
+    def set_texture(self,size=80):
+        self.texture=os.path.join(f'assets/images/imgs-{size}px/{self.color}_{self.name}.png')
+    def add_move(self,move):
+        self.moves.append(move)
 class Pawn(piece):
     def __init__(self, color):
         self.dir =-1 if color=='white' else 1
@@ -34,4 +39,4 @@ class Queen(piece):
         super().__init__('queen',color,9.0)
 class King(piece):
     def __init__(self, color):
-        super().__init__('king',color,math.inf())
+        super().__init__('king',color,100000000000000)
