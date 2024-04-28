@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="board.py" />
+    <Compile Include="dragger.py" />
     <Compile Include="piece.py" />
     <Compile Include="square.py" />
     <Compile Include="game.py" />

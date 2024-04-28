@@ -15,6 +15,8 @@ class piece:
         self.texture=os.path.join(f'assets/images/imgs-{size}px/{self.color}_{self.name}.png')
     def add_move(self,move):
         self.moves.append(move)
+
+
 class Pawn(piece):
     def __init__(self, color):
         self.dir =-1 if color=='white' else 1
@@ -37,6 +39,7 @@ class Rook(piece):
 class Queen(piece):
     def __init__(self, color):
         super().__init__('queen',color,9.0)
+
 class King(piece):
     def __init__(self, color):
         super().__init__('king',color,100000000000000)
